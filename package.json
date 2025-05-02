@@ -24,9 +24,10 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "compile:sass": "node-sass src/**/sass/style.scss src/**/style.css -w",
+    "compile:sass": "sass src/**/sass/style.scss src/**/style.css --watch",
     "compile:all": "sh ./__script__/sass-comile.sh",
-    "postbuild": "sh ./__script__/build.sh"
+    "postbuild": "sh ./__script__/build.sh",
+    
   },
   "peerDependencies": {
     "react": ">=16"
@@ -73,7 +74,7 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
-    "node-sass": "^7.0.1",
+
     "postcss": "^8.4.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
