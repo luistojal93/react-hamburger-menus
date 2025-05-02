@@ -40,7 +40,7 @@ export const ResponsiveNavbar = (props: ResponsiveNavbarProps) => {
 
   const { isOpen, setToggle } = useToggle();
 
-  const media = useMedia('min-width', 1000);
+  const media = useMedia('min-width', props.breakpoint || 1000);
 
   const classId = 'rhm-rn';
   const uniqueId = Math.floor(Math.random() * 30000000);
